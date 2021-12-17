@@ -11951,11 +11951,14 @@ fieldset:disabled .btn {
   }
 }
 
-ol,
 ul {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+ol,
+ul {
   border: 0;
 }
 
