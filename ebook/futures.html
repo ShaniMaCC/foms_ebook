@@ -5,12 +5,9 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>期貨</title>
+  <title>FOMS操作手冊|期權商品查詢|期貨</title>
   <link rel="stylesheet" href="./style/all.min.css" />
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"></script>
-
+  <script src="./js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
@@ -18,11 +15,11 @@
     <div class="row">
       <nav class="col-12 col-md-4 mb-5">
         <div class="card border-0">
-          <a class="card-header fw-bold" href="#">FOMS<br>期貨服務管理平台</a>
+          <a class="card-header fw-bold" href="./index.html">FOMS<br>期貨服務管理平台</a>
           <div class="accordion list-group" id="ebookContent">
             <ul class="accordion-item list-group-item p-0 rounded-0">
               <h2 class="accordion-header" id="headingBasicFunction">
-                <button class="accordion-button text-secondary" type="button" data-bs-toggle="collapse"
+                <button class="accordion-button bg-primary text-dark" type="button" data-bs-toggle="collapse"
                   data-bs-target="#collapseBasic" aria-expanded="true" aria-controls="collapseBasic">
                   <strong>基本功能</strong>
                 </button>
@@ -54,32 +51,30 @@
             </ul>
             <ul class="accordion-item list-group-item p-0">
               <h2 class="accordion-header" id="headingTradeFunction">
-                <button class="accordion-button text-secondary" type="button" data-bs-toggle="collapse"
+                <button class="accordion-button bg-primary text-dark" type="button" data-bs-toggle="collapse"
                   data-bs-target="#collapseTrade" aria-expanded="true" aria-controls="collapseTrade">
                   <strong>交易功能</strong>
                 </button>
               </h2>
               <li id="collapseTrade" class="accordion-collapse collapse show dropdown"
                 aria-labelledby="headingTradeFunction" data-bs-parent="#ebookContent">
-                <a class="accordion-body" id="navbarDropdown" role="button" data-bs-toggle="dropdown" href="#"
-                  aria-expanded="false">
+                <a class="accordion-body" href="#">
                   <strong>指示單</strong>
                 </a>
-                <ul class="collapseOrder" class="accordion-collapse collapse show dropdown"
+                <ul class="collapseOrder" class="accordion-collapse collapse show"
                   aria-labelledby="headingTradeFunction" data-bs-parent="#ebookContent">
-                  <li class="hover-menu"><a class="accordion-body" href="./el_order.html">電子接單</a>
+                  <li class="hover-menu"><a class="accordion-body " href="./el_order.html">電子接單</a>
                   </li>
                   <li class="hover-menu"><a class="accordion-body" href="./add_order.html">新增指示單</a>
                   </li>
                 </ul>
               </li>
-              <li id="collapseTrade" class="accordion-collapse collapse show dropdown"
-                aria-labelledby="headingTradeFunction" data-bs-parent="#ebookContent">
-                <a class="accordion-body" id="navbarDropdown" role="button" data-bs-toggle="dropdown" href="#"
-                  aria-expanded="false">
+              <li id="collapseTrade" class="accordion-collapse collapse show" aria-labelledby="headingTradeFunction"
+                data-bs-parent="#ebookContent">
+                <a class="accordion-body" href="#">
                   <strong>母單委託</strong>
                 </a>
-                <ul class="collapseOrder" class="accordion-collapse collapse show dropdown"
+                <ul class="collapseOrder" class="accordion-collapse collapse show"
                   aria-labelledby="headingTradeFunction" data-bs-parent="#ebookContent">
                   <li class="hover-menu"><a class="accordion-body" href="./group_func.html">群組分類功能</a>
                   </li>
@@ -103,11 +98,10 @@
               </li>
               <li id="collapseTrade" class="accordion-collapse collapse show dropdown"
                 aria-labelledby="headingTradeFunction" data-bs-parent="#ebookContent">
-                <a class="accordion-body" id="navbarDropdown" role="button" data-bs-toggle="dropdown" href="#"
-                  aria-expanded="false">
+                <a class="accordion-body" href="#">
                   <strong>子單委託</strong>
                 </a>
-                <ul class="collapseOrder" class="accordion-collapse collapse show dropdown"
+                <ul class="collapseOrder" class="accordion-collapse collapse show"
                   aria-labelledby="headingTradeFunction" data-bs-parent="#ebookContent">
                   <li class="hover-menu"><a class="accordion-body" href="./filter.html">篩選器</a>
                   </li>
@@ -121,17 +115,54 @@
               </li>
               <li id="collapseTrade" class="accordion-collapse collapse show dropdown"
                 aria-labelledby="headingTradeFunction" data-bs-parent="#ebookContent">
-                <a class="accordion-body" id="navbarDropdown" role="button" data-bs-toggle="dropdown" href="#"
-                  aria-expanded="false">
+                <a class="accordion-body" href="#">
                   <strong>期權商品查詢</strong>
                 </a>
-                <ul class="collapseOrder" class="accordion-collapse collapse show dropdown"
+                <ul class="collapseOrder" class="accordion-collapse collapse show"
                   aria-labelledby="headingTradeFunction" data-bs-parent="#ebookContent">
-                  <li class="hover-menu"><a class="accordion-body" href="./futures.html">期貨</a>
+                  <li class="hover-menu"><a class="accordion-body click-style" href="./futures.html">期貨</a>
                   </li>
                   <li class="hover-menu"><a class="accordion-body" href="./option.html">選擇權</a>
                   </li>
                 </ul>
+              </li>
+            </ul>
+            <ul class="accordion-item list-group-item p-0">
+              <h2 class="accordion-header" id="headingAdminFunction">
+                <button class="accordion-button bg-primary text-dark" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseAdmin" aria-expanded="true" aria-controls="collapseAdmin">
+                  <strong>管理功能(管理者權限)</strong>
+                </button>
+              </h2>
+              <li id="collapseAdmin" class="accordion-collapse collapse dropdown" aria-labelledby="headingAdminFunction"
+                data-bs-parent="#ebookContent">
+                <div class="accordion-body" role="button" data-bs-toggle="dropdown" href="#" aria-expanded="false">
+                  <strong>買方資訊</strong>
+                </div>
+                <ul class="collapseClient" class="accordion-collapse collapse show dropdown"
+                  aria-labelledby="headingAdminFunction" data-bs-parent="#ebookContent">
+                  <li class="hover-menu"><a class="accordion-body" href="./clientInfo_connect.html">連線對應</a>
+                  </li>
+                  <li class="hover-menu"><a class="accordion-body" href="./clientInfo_account.html">帳號對應</a></li>
+                </ul>
+              </li>
+              <li id="collapseAdmin" class="accordion-collapse collapse" aria-labelledby="headingAdminFunction"
+                data-bs-parent="#ebookContent">
+                <div class="accordion-body" href="#">
+                  <strong>交易群組</strong>
+                </div>
+                <ul class="collapseTradeGroup" class="accordion-collapse collapse show dropdown"
+                  aria-labelledby="headingAdminFunction" data-bs-parent="#ebookContent">
+                  <li class="hover-menu"><a class="accordion-body" href="./tradeGroup_setting.html">交易群組設定</a>
+                  </li>
+                  <li class="hover-menu"><a class="accordion-body" href="./tradeGroup_associate.html">對應關聯帳號列表</a></li>
+                </ul>
+              </li>
+              <li id="collapseAdmin" class="accordion-collapse collapse  hover-menu"
+                aria-labelledby="headingAdminFunction" data-bs-parent="#ebookContent">
+                <a class="accordion-body" href="./trader_setting.html">
+                  <strong>交易員帳號設定</strong>
+                </a>
               </li>
             </ul>
           </div>
