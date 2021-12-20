@@ -11989,4 +11989,8 @@ a {
 .hover-menu :hover {
   background-color: #f91;
 }
+
+.click-style {
+  border-left: 4px #f91 solid;
+}
 /*# sourceMappingURL=all.css.map */
