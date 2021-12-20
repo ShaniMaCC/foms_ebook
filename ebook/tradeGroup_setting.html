@@ -27,25 +27,25 @@
                                     <strong>基本功能</strong>
                                 </button>
                             </h2>
-                            <li id="collapseBasic" class="accordion-collapse collapse show  hover-menu"
+                            <li id="collapseBasic" class="accordion-collapse collapse hover-menu"
                                 aria-labelledby="headingBasicFunction" data-bs-parent="#ebookContent">
                                 <a class="accordion-body" href="./index.html">
                                     <strong>登入</strong>
                                 </a>
                             </li>
-                            <li id="collapseBasic" class="accordion-collapse collapse show  hover-menu"
+                            <li id="collapseBasic" class="accordion-collapse collapse  hover-menu"
                                 aria-labelledby="headingBasicFunction" data-bs-parent="#ebookContent">
                                 <a class="accordion-body" href="./logout.html">
                                     <strong>登出</strong>
                                 </a>
                             </li>
-                            <li id="collapseBasic" class="accordion-collapse collapse show  hover-menu"
+                            <li id="collapseBasic" class="accordion-collapse collapse hover-menu"
                                 aria-labelledby="headingBasicFunction" data-bs-parent="#ebookContent">
                                 <a class="accordion-body" href="./psd.html">
                                     <strong>變更密碼</strong>
                                 </a>
                             </li>
-                            <li id="collapseBasic" class="accordion-collapse collapse show  hover-menu"
+                            <li id="collapseBasic" class="accordion-collapse collapse  hover-menu"
                                 aria-labelledby="headingBasicFunction" data-bs-parent="#ebookContent">
                                 <a class="accordion-body" href="./user_setting.html">
                                     <strong>個人化設定</strong>
@@ -91,36 +91,32 @@
                                     <strong>管理功能(管理者權限)</strong>
                                 </button>
                             </h2>
-                            <li id="collapseAdmin" class="accordion-collapse collapse dropdown"
+                            <li id="collapseAdmin" class="accordion-collapse collapse show dropdown"
                                 aria-labelledby="headingAdminFunction" data-bs-parent="#ebookContent">
-                                <a class="accordion-body" role="button" data-bs-toggle="dropdown" href="#"
-                                    aria-expanded="false">
+                                <a class="accordion-body" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                    href="#" aria-expanded="false">
                                     <strong>買方資訊</strong>
                                 </a>
                                 <ul class="collapseClient" class="accordion-collapse collapse show dropdown"
                                     aria-labelledby="headingAdminFunction" data-bs-parent="#ebookContent">
-                                    <li class="hover-menu"><a class="accordion-body"
-                                            href="./clientInfo_connect.html">連線對應</a>
+                                    <li class="hover-menu"><a class="accordion-body" href="./clientInfo_connect.html">連線對應</a>
                                     </li>
-                                    <li class="hover-menu"><a class="accordion-body"
-                                            href="./clientInfo_account.html">帳號對應</a></li>
+                                    <li class="hover-menu"><a class="accordion-body" href="./clientInfo_account.html">帳號對應</a></li>
                                 </ul>
                             </li>
-                            <li id="collapseAdmin" class="accordion-collapse collapse"
+                            <li id="collapseAdmin" class="accordion-collapse collapse show"
                                 aria-labelledby="headingAdminFunction" data-bs-parent="#ebookContent">
                                 <a class="accordion-body" href="#">
                                     <strong>交易群組</strong>
                                 </a>
                                 <ul class="collapseTradeGroup" class="accordion-collapse collapse show dropdown"
                                     aria-labelledby="headingAdminFunction" data-bs-parent="#ebookContent">
-                                    <li class="hover-menu"><a class="accordion-body"
-                                            href="./tradeGroup_setting.html">交易群組設定</a>
+                                    <li class="hover-menu"><a class="accordion-body" href="./tradeGroup_setting.html">交易群組設定</a>
                                     </li>
-                                    <li class="hover-menu"><a class="accordion-body"
-                                            href="./tradeGroup_associate.html">對應關聯帳號列表</a></li>
+                                    <li class="hover-menu"><a class="accordion-body" href="./tradeGroup_associate.html">對應關聯帳號列表</a></li>
                                 </ul>
                             </li>
-                            <li id="collapseAdmin" class="accordion-collapse collapse  hover-menu"
+                            <li id="collapseAdmin" class="accordion-collapse collapse show hover-menu"
                                 aria-labelledby="headingAdminFunction" data-bs-parent="#ebookContent">
                                 <a class="accordion-body" href="./trader_setting.html">
                                     <strong>交易員帳號設定</strong>
@@ -133,16 +129,48 @@
             </nav>
             <main class="col-12 col-md-8">
                 <header class="mb-4">
-                    <h2 class="fw-bold">基本功能</h2>
-                    <h4 class="text-secondary fw-bold">變更密碼</h4>
+                    <h2 class="fw-bold">管理功能(管理者權限)</h2>
+                    <h4 class="text-secondary fw-bold">交易群組—交易群組設定</h4>
                 </header>
-                <ol>
-                    <li class="my-2">點選變更密碼</li>
-                    <li class="my-2">輸入舊、新密碼後點選儲存</li>
-                    <li class="my-2">確定密碼變更成功</li>
+                <ol class="nav nav-tabs" id="tradegroupTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="addgroup-tab" data-bs-toggle="tab"
+                            data-bs-target="#addgroup" type="button" role="tab" aria-controls="addgroup"
+                            aria-selected="true">新增群組</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="editgroup-tab" data-bs-toggle="tab" data-bs-target="#editgroup"
+                            type="button" role="tab" aria-controls="editgroup" aria-selected="false">編輯群組</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="delgroup-tab" data-bs-toggle="tab" data-bs-target="#delgroup"
+                            type="button" role="tab" aria-controls="delgroup" aria-selected="false">刪除群組</button>
+                    </li>
                 </ol>
-                <img src="./img/1-3-1.jpg" alt="change password step1 to step2" class="mb-5">
-                <img src="./img/1-3-2.jpg" alt="change password step3">
+                <div class="tab-content mt-5" id="tradegroupTabContent">
+                    <ol class="tab-pane fade show active" id="addgroup" role="tabpanel"
+                        aria-labelledby="addgroup">
+                        <li class="my-2">點選新增群組</li>
+                        <li class="my-2">輸入群組資訊</li>
+                        <li class="my-2">儲存</li>
+                        <li class="my-2">更新於交易群組清單</li>
+                        <li class="list-style-none my-2"><img src="./img/3-2-1.jpg" alt="add trade group step1 to step3"></li>
+                        <li class="list-style-none my-2"><img src="./img/3-2-2.jpg" alt="add trade group step4"></li>
+                    </ol>
+                    <ol class="tab-pane fade" id="editgroup" role="tabpanel" aria-labelledby="editgroup">
+                        <li class="my-2">點選編輯</li>
+                        <li class="my-2">輸入欲修正之群組名稱</li>
+                        <li class="my-2">儲存</li>
+                        <li class="my-2">更新於交易群組清單</li>
+                        <li class="list-style-none my-2"><img src="./img/3-2-3.jpg" alt="edit trade group steps"></li>
+                    </ol>
+                    <ol class="tab-pane fade" id="delgroup" role="tabpanel" aria-labelledby="delgroup">
+                        <li class="my-2">點選刪除</li>
+                        <li class="my-2">確認刪除</li>
+                        <li class="my-2">更新於交易群組清單</li>
+                        <li class="list-style-none my-2"><img src="./img/3-2-4.jpg" alt="delete trade group steps"></li>
+                    </ol>
+                </div>
             </main>
         </div>
     </div>
