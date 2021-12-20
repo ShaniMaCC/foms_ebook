@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>User Setting</title>
+    <title>FOMS操作手冊|個人化設定</title>
     <link rel="stylesheet" href="./style/all.min.css" />
     <script src="./js/bootstrap.bundle.min.js"></script>
 
@@ -50,36 +50,84 @@
                                 </a>
                             </li>
                         </ul>
-                        <ul class="accordion-item list-group-item p-0 ">
+                        <ul class="accordion-item list-group-item p-0">
                             <h2 class="accordion-header" id="headingTradeFunction">
-                                <button class="accordion-button bg-primary text-dark" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseTrade" aria-expanded="true" aria-controls="collapseTrade">
+                                <button class="accordion-button bg-primary text-dark" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseTrade" aria-expanded="true"
+                                    aria-controls="collapseTrade">
                                     <strong>交易功能</strong>
                                 </button>
                             </h2>
-                            <li id="collapseTrade" class="accordion-collapse collapse  hover-menu"
+                            <li id="collapseTrade" class="accordion-collapse collapse dropdown"
                                 aria-labelledby="headingTradeFunction" data-bs-parent="#ebookContent">
-                                <a class="accordion-body" href="./new_order.html">
+                                <a class="accordion-body" href="#">
                                     <strong>指示單</strong>
                                 </a>
+                                <ul class="collapseOrder" class="accordion-collapse collapse"
+                                    aria-labelledby="headingTradeFunction" data-bs-parent="#ebookContent">
+                                    <li class="hover-menu"><a class="accordion-body" href="./el_order.html">電子接單</a>
+                                    </li>
+                                    <li class="hover-menu"><a class="accordion-body" href="./add_order.html">新增指示單</a>
+                                    </li>
+                                </ul>
                             </li>
-                            <li id="collapseTrade" class="accordion-collapse collapse  hover-menu"
+                            <li id="collapseTrade" class="accordion-collapse collapse"
                                 aria-labelledby="headingTradeFunction" data-bs-parent="#ebookContent">
-                                <a class="accordion-body" href="./main_order.html">
+                                <a class="accordion-body" href="#">
                                     <strong>母單委託</strong>
                                 </a>
+                                <ul class="collapseOrder" class="accordion-collapse collapse"
+                                    aria-labelledby="headingTradeFunction" data-bs-parent="#ebookContent">
+                                    <li class="hover-menu"><a class="accordion-body" href="./group_func.html">群組分類功能</a>
+                                    </li>
+                                    <li class="hover-menu"><a class="accordion-body" href="./list_func.html">列表篩選功能</a>
+                                    </li>
+                                    <li class="hover-menu"><a class="accordion-body" href="./switch.html">轉倉</a>
+                                    </li>
+                                    <li class="hover-menu"><a class="accordion-body" href="./move_group.html">移動群組分類</a>
+                                    </li>
+                                    <li class="hover-menu"><a class="accordion-body" href="./proxy.html">代理</a>
+                                    </li>
+                                    <li class="hover-menu"><a class="accordion-body"
+                                            href="./delete_main_order.html">刪除母單</a>
+                                    </li>
+                                    <li class="hover-menu"><a class="accordion-body" href="./split_order.html">拆單</a>
+                                    </li>
+                                    <li class="hover-menu"><a class="accordion-body"
+                                            href="./sub_order_detail.html">子單詳情</a>
+                                    </li>
+                                    <li class="hover-menu"><a class="accordion-body" href="./remark.html">備註</a>
+                                    </li>
+                                </ul>
                             </li>
-                            <li id="collapseTrade" class="accordion-collapse collapse  hover-menu"
+                            <li id="collapseTrade" class="accordion-collapse collapse dropdown"
                                 aria-labelledby="headingTradeFunction" data-bs-parent="#ebookContent">
-                                <a class="accordion-body" href="./sub_order.html">
+                                <a class="accordion-body" href="#">
                                     <strong>子單委託</strong>
                                 </a>
+                                <ul class="collapseOrder" class="accordion-collapse collapse"
+                                    aria-labelledby="headingTradeFunction" data-bs-parent="#ebookContent">
+                                    <li class="hover-menu"><a class="accordion-body" href="./filter.html">篩選器</a>
+                                    </li>
+                                    <li class="hover-menu"><a class="accordion-body" href="./change_qty.html">改量</a>
+                                    </li>
+                                    <li class="hover-menu"><a class="accordion-body" href="./change_price.html">改價</a>
+                                    </li>
+                                    <li class="hover-menu"><a class="accordion-body"
+                                            href="./delete_sub_order.html">刪除子單</a>
+                                    </li>
+                                </ul>
                             </li>
-                            <li id="collapseTrade" class="accordion-collapse collapse  hover-menu"
+                            <li id="collapseTrade" class="accordion-collapse collapse dropdown"
                                 aria-labelledby="headingTradeFunction" data-bs-parent="#ebookContent">
-                                <a class="accordion-body" href="./product.html">
+                                <a class="accordion-body" href="#">
                                     <strong>期權商品查詢</strong>
                                 </a>
+                                <ul class="collapseOrder" class="accordion-collapse collapse"
+                                    aria-labelledby="headingTradeFunction" data-bs-parent="#ebookContent">
+                                    <li class="hover-menu"><a class="accordion-body" href="./futures.html">期貨</a>
+                                    </li>
+                                </ul>
                             </li>
                         </ul>
                         <ul class="accordion-item list-group-item p-0">
