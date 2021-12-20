@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>改量</title>
+  <link rel="stylesheet" href="./style/all.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <div class="container my-3">
+    <div class="row">
+      <nav class="col-12 col-md-4 mb-5">
+        <div class="card border-0">
+          <a class="card-header fw-bold" href="#">FOMS<br>期貨服務管理平台</a>
+          <div class="accordion list-group" id="ebookContent">
+            <ul class="accordion-item list-group-item p-0 rounded-0">
+              <h2 class="accordion-header" id="headingBasicFunction">
+                <button class="accordion-button text-secondary" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseBasic" aria-expanded="true" aria-controls="collapseBasic">
+                  <strong>基本功能</strong>
+                </button>
+              </h2>
+              <li id="collapseBasic" class="accordion-collapse collapse hover-menu"
+                aria-labelledby="headingBasicFunction" data-bs-parent="#ebookContent">
+                <a class="accordion-body" href="./index.html">
+                  <strong>登入</strong>
+                </a>
+              </li>
+              <li id="collapseBasic" class="accordion-collapse collapse  hover-menu"
+                aria-labelledby="headingBasicFunction" data-bs-parent="#ebookContent">
+                <a class="accordion-body" href="./logout.html">
+                  <strong>登出</strong>
+                </a>
+              </li>
+              <li id="collapseBasic" class="accordion-collapse collapse hover-menu"
+                aria-labelledby="headingBasicFunction" data-bs-parent="#ebookContent">
+                <a class="accordion-body" href="./psd.html">
+                  <strong>變更密碼</strong>
+                </a>
+              </li>
+              <li id="collapseBasic" class="accordion-collapse collapse  hover-menu"
+                aria-labelledby="headingBasicFunction" data-bs-parent="#ebookContent">
+                <a class="accordion-body" href="./user_setting.html">
+                  <strong>個人化設定</strong>
+                </a>
+              </li>
+            </ul>
+            <ul class="accordion-item list-group-item p-0">
+              <h2 class="accordion-header" id="headingTradeFunction">
+                <button class="accordion-button text-secondary" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseTrade" aria-expanded="true" aria-controls="collapseTrade">
+                  <strong>交易功能</strong>
+                </button>
+              </h2>
+              <li id="collapseTrade" class="accordion-collapse collapse show dropdown"
+                aria-labelledby="headingTradeFunction" data-bs-parent="#ebookContent">
+                <a class="accordion-body" id="navbarDropdown" role="button" data-bs-toggle="dropdown" href="#"
+                  aria-expanded="false">
+                  <strong>指示單</strong>
+                </a>
+                <ul class="collapseOrder" class="accordion-collapse collapse show dropdown"
+                  aria-labelledby="headingTradeFunction" data-bs-parent="#ebookContent">
+                  <li class="hover-menu"><a class="accordion-body" href="./el_order.html">電子接單</a>
+                  </li>
+                  <li class="hover-menu"><a class="accordion-body" href="./add_order.html">新增指示單</a>
+                  </li>
+                </ul>
+              </li>
+              <li id="collapseTrade" class="accordion-collapse collapse show dropdown"
+                aria-labelledby="headingTradeFunction" data-bs-parent="#ebookContent">
+                <a class="accordion-body" id="navbarDropdown" role="button" data-bs-toggle="dropdown" href="#"
+                  aria-expanded="false">
+                  <strong>母單委託</strong>
+                </a>
+                <ul class="collapseOrder" class="accordion-collapse collapse show dropdown"
+                  aria-labelledby="headingTradeFunction" data-bs-parent="#ebookContent">
+                  <li class="hover-menu"><a class="accordion-body" href="./group_func.html">群組分類功能</a>
+                  </li>
+                  <li class="hover-menu"><a class="accordion-body" href="./list_func.html">列表篩選功能</a>
+                  </li>
+                  <li class="hover-menu"><a class="accordion-body" href="./switch.html">轉倉</a>
+                  </li>
+                  <li class="hover-menu"><a class="accordion-body" href="./move_group.html">移動群組分類</a>
+                  </li>
+                  <li class="hover-menu"><a class="accordion-body" href="./proxy.html">代理</a>
+                  </li>
+                  <li class="hover-menu"><a class="accordion-body" href="./delete_main_order.html">刪除母單</a>
+                  </li>
+                  <li class="hover-menu"><a class="accordion-body" href="./split_order.html">拆單</a>
+                  </li>
+                  <li class="hover-menu"><a class="accordion-body" href="./sub_order_detail.html">子單詳情</a>
+                  </li>
+                  <li class="hover-menu"><a class="accordion-body" href="./remark.html">備註</a>
+                  </li>
+                </ul>
+              </li>
+              <li id="collapseTrade" class="accordion-collapse collapse show dropdown"
+                aria-labelledby="headingTradeFunction" data-bs-parent="#ebookContent">
+                <a class="accordion-body" id="navbarDropdown" role="button" data-bs-toggle="dropdown" href="#"
+                  aria-expanded="false">
+                  <strong>子單委託</strong>
+                </a>
+                <ul class="collapseOrder" class="accordion-collapse collapse show dropdown"
+                  aria-labelledby="headingTradeFunction" data-bs-parent="#ebookContent">
+                  <li class="hover-menu"><a class="accordion-body" href="./filter.html">篩選器</a>
+                  </li>
+                  <li class="hover-menu"><a class="accordion-body" href="./change_qty.html">改量</a>
+                  </li>
+                  <li class="hover-menu"><a class="accordion-body" href="./change_price.html">改價</a>
+                  </li>
+                  <li class="hover-menu"><a class="accordion-body" href="./delete_sub_order.html">刪除子單</a>
+                  </li>
+                </ul>
+              </li>
+              <li id="collapseTrade" class="accordion-collapse collapse show dropdown"
+                aria-labelledby="headingTradeFunction" data-bs-parent="#ebookContent">
+                <a class="accordion-body" id="navbarDropdown" role="button" data-bs-toggle="dropdown" href="#"
+                  aria-expanded="false">
+                  <strong>期權商品查詢</strong>
+                </a>
+                <ul class="collapseOrder" class="accordion-collapse collapse show dropdown"
+                  aria-labelledby="headingTradeFunction" data-bs-parent="#ebookContent">
+                  <li class="hover-menu"><a class="accordion-body" href="./futures.html">期貨</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <main class="col-12 col-md-8">
+        <header class="mb-4">
+          <h2 class="fw-bold">交易功能</h2>
+          <h4 class="text-secondary fw-bold">子單委託—改量</h4>
+        </header>
+        <ol>
+          <li class="my-2">點選欲改量的子單改量按鈕</li>
+          <li class="my-2">選擇減少or減為</li>
+          <li class="my-2">輸入數量，自動帶進改後量</li>
+          <li class="my-2">確認</li>
+          <li class="my-2">更新子單狀態及委託量</li>
+          <img src="./img/2-3-2.jpg" alt="sub order change qty information step1 to step4">
+          <img src="./img/2-3-3.jpg" alt="sub order change qty information step5">
+        </ol>
+      </main>
+    </div>
+  </div>
+</body>
+
+</html>
