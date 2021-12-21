@@ -1,8 +1,10 @@
 .hover-menu{
-    :hover{
-            background-color: $secondary;
+    &:hover{
+        border-bottom: 4px $secondary solid;
     }
+
 }
 .click-style{
-    border-left: 4px $secondary solid;
+    background-color: $secondary;
+    color: $dark !important;
 }

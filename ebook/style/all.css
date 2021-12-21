@@ -11986,11 +11986,20 @@ a {
   list-style: none;
 }
 
-.hover-menu :hover {
-  background-color: #f91;
+.text-indent-sm {
+  text-indent: 1rem;
+}
+
+.text-indent-lg {
+  text-indent: 2rem;
+}
+
+.hover-menu:hover {
+  border-bottom: 4px #f91 solid;
 }
 
 .click-style {
-  border-left: 4px #f91 solid;
+  background-color: #f91;
+  color: #212529 !important;
 }
 /*# sourceMappingURL=all.css.map */
