@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FOMS操作手冊|登入</title>
+  <title>FOMS操作手冊|母單委託|拆單</title>
   <link rel="stylesheet" href="./style/all.min.css" />
   <script src="./js/bootstrap.bundle.min.js"></script>
 </head>
@@ -17,79 +17,77 @@
         <div class="card border-0">
           <a class="card-header fw-bold" href="./index.html">FOMS<br>期貨服務管理平台</a>
           <div class="accordion list-group" id="ebookContent">
-            <ul class="accordion-item list-group-item p-0">
+            <ul class="accordion-item list-group-item p-0 rounded-0">
               <h2 class="accordion-header" id="headingTradeFunction">
                 <button class="accordion-button bg-primary text-dark" type="button" data-bs-toggle="collapse"
                   data-bs-target="#collapseTrade" aria-expanded="true" aria-controls="collapseTrade">
                   <strong>交易功能</strong>
                 </button>
               </h2>
-              <li id="collapseTrade" class="accordion-collapse collapse" aria-labelledby="headingTradeFunction"
+              <li id="collapseTrade" class="accordion-collapse collapse show" aria-labelledby="headingTradeFunction"
                 data-bs-parent="#ebookContent">
                 <a class="accordion-body text-primary text-indent-sm" href="#">
-                  <strong>1. 母單委託</strong>
+                  <strong>A. 母單委託</strong>
                 </a>
                 <ul>
-                  <li class="hover-menu"><a class="accordion-body text-indent-lg" href="./group_func.html">a. 群組分類功能</a>
+                  <li class="hover-menu"><a class="accordion-body text-indent-lg click-style" href="./index.html">1. 策略拆單</a>
                   </li>
-                  <li class="hover-menu"><a class="accordion-body text-indent-lg" href="./list_func.html">b. 列表篩選功能</a>
+                  <li class="hover-menu"><a class="accordion-body text-indent-lg" href="./sub_order_detail.html">2. 子單詳情</a>
                   </li>
-                  <li class="hover-menu"><a class="accordion-body text-indent-lg" href="./switch.html">c. 轉倉</a>
+                  <li class="hover-menu"><a class="accordion-body text-indent-lg" href="./switch.html">3. 策略轉倉</a>
                   </li>
-                  <li class="hover-menu"><a class="accordion-body text-indent-lg" href="./move_group.html">d. 移動群組分類</a>
+                  <li class="hover-menu"><a class="accordion-body text-indent-lg" href="./delete_main_order.html">4. 刪除母單</a>
                   </li>
-                  <li class="hover-menu"><a class="accordion-body text-indent-lg" href="./proxy.html">e. 代理</a>
+                  <li class="hover-menu"><a class="accordion-body text-indent-lg" href="./proxy.html">5. 代理委託</a>
                   </li>
-                  <li class="hover-menu"><a class="accordion-body text-indent-lg" href="./delete_main_order.html">f.
-                      刪除母單</a>
+                  <li class="hover-menu"><a class="accordion-body text-indent-lg" href="./group_func.html">6. 群組分類</a>
                   </li>
-                  <li class="hover-menu"><a class="accordion-body text-indent-lg" href="./split_order.html">g. 拆單</a>
+                  <li class="hover-menu"><a class="accordion-body text-indent-lg" href="./move_group.html">7. 移動群組</a>
                   </li>
-                  <li class="hover-menu"><a class="accordion-body text-indent-lg" href="./sub_order_detail.html">h.
-                      子單詳情</a>
+                  <li class="hover-menu"><a class="accordion-body text-indent-lg" href="./list_func.html">8. 列表篩選</a>
                   </li>
-                  <li class="hover-menu"><a class="accordion-body text-indent-lg" href="./remark.html">i. 備註</a>
+                  <li class="hover-menu"><a class="accordion-body text-indent-lg" href="./remark.html">9. 備註</a>
                   </li>
                 </ul>
               </li>
-              <li id="collapseTrade" class="accordion-collapse collapse dropdown" aria-labelledby="headingTradeFunction"
+              <li id="collapseTrade" class="accordion-collapse collapse show" aria-labelledby="headingTradeFunction"
                 data-bs-parent="#ebookContent">
                 <a class="accordion-body text-primary text-indent-sm" href="#">
-                  <strong>2. 子單委託</strong>
+                  <strong>B. 子單委託</strong>
                 </a>
                 <ul>
-                  <li class="hover-menu"><a class="accordion-body text-indent-lg" href="./filter.html">a. 篩選器</a>
+                  <li class="hover-menu"><a class="accordion-body text-indent-lg" href="./change_qty.html">1. 改量</a>
                   </li>
-                  <li class="hover-menu"><a class="accordion-body text-indent-lg" href="./change_qty.html">b. 改量</a>
+                  <li class="hover-menu"><a class="accordion-body text-indent-lg" href="./change_price.html">2. 改價</a>
                   </li>
-                  <li class="hover-menu"><a class="accordion-body text-indent-lg" href="./change_price.html">c. 改價</a>
+                  <li class="hover-menu"><a class="accordion-body text-indent-lg" href="./filter.html">3. 篩選</a>
                   </li>
-                  <li class="hover-menu"><a class="accordion-body text-indent-lg" href="./delete_sub_order.html">d.
-                      刪除子單</a>
+                  <li class="hover-menu"><a class="accordion-body text-indent-lg" href="./delete_sub_order.html">4.
+                      刪除</a>
                   </li>
                 </ul>
               </li>
-              <li id="collapseTrade" class="accordion-collapse collapse dropdown" aria-labelledby="headingTradeFunction"
+              <li id="collapseTrade" class="accordion-collapse collapse show" aria-labelledby="headingTradeFunction"
                 data-bs-parent="#ebookContent">
                 <a class="accordion-body text-primary text-indent-sm" href="#">
-                  <strong>3. 指示單</strong>
+                  <strong>C. 指示單</strong>
                 </a>
                 <ul>
-                  <li class="hover-menu"><a class="accordion-body text-indent-lg" href="./el_order.html">a. 電子接單</a>
+                  <li class="hover-menu"><a class="accordion-body text-indent-lg" href="./el_order.html">1. 電子接單</a>
                   </li>
-                  <li class="hover-menu"><a class="accordion-body text-indent-lg" href="./add_order.html">b. 新增指示單</a>
+                  <li class="hover-menu"><a class="accordion-body text-indent-lg" href="./add_order.html">2. 新增指示單</a>
                   </li>
                 </ul>
               </li>
-              <li id="collapseTrade" class="accordion-collapse collapse dropdown" aria-labelledby="headingTradeFunction"
+              <li id="collapseTrade" class="accordion-collapse collapse show" aria-labelledby="headingTradeFunction"
                 data-bs-parent="#ebookContent">
                 <a class="accordion-body text-primary text-indent-sm" href="#">
-                  <strong>4. 期權商品查詢</strong>
+                  <strong>D. 期權商品查詢</strong>
                 </a>
                 <ul>
-                  <li class="hover-menu"><a class="accordion-body text-indent-lg" href="./futures.html">a. 期貨</a>
+                  <li class="hover-menu"><a class="accordion-body text-indent-lg" href="./futures.html">1. 期貨</a>
                   </li>
-                  <li class="hover-menu"><a class="accordion-body text-indent-lg" href="./option.html">b. 選擇權</a>
+                  <li class="hover-menu"><a class="accordion-body text-indent-lg" href="./option.html">2. 選擇權</a>
                   </li>
                 </ul>
               </li>
@@ -105,65 +103,65 @@
                 data-bs-parent="#ebookContent">
                 <a class="accordion-body text-indent-sm text-primary" role="button" data-bs-toggle="dropdown" href="#"
                   aria-expanded="false">
-                  <strong>1. 買方資訊</strong>
+                  <strong>A. 買方資訊</strong>
                 </a>
                 <ul>
-                  <li class="hover-menu"><a class="accordion-body text-indent-lg" href="./clientInfo_connect.html">a.
+                  <li class="hover-menu"><a class="accordion-body text-indent-lg" href="./clientInfo_connect.html">1.
                       連線對應</a>
                   </li>
-                  <li class="hover-menu"><a class="accordion-body text-indent-lg" href="./clientInfo_account.html">b.
+                  <li class="hover-menu"><a class="accordion-body text-indent-lg" href="./clientInfo_account.html">2.
                       帳號對應</a></li>
                 </ul>
               </li>
               <li id="collapseAdmin" class="accordion-collapse collapse" aria-labelledby="headingAdminFunction"
                 data-bs-parent="#ebookContent">
                 <a class="accordion-body text-indent-sm text-primary" href="#">
-                  <strong>2. 交易群組</strong>
+                  <strong>B. 交易群組</strong>
                 </a>
                 <ul>
-                  <li class="hover-menu"><a class="accordion-body text-indent-lg" href="./tradeGroup_setting.html">a.
+                  <li class="hover-menu"><a class="accordion-body text-indent-lg" href="./tradeGroup_setting.html">1.
                       交易群組設定</a>
                   </li>
-                  <li class="hover-menu"><a class="accordion-body text-indent-lg" href="./tradeGroup_associate.html">b.
+                  <li class="hover-menu"><a class="accordion-body text-indent-lg" href="./tradeGroup_associate.html">2.
                       對應關聯帳號列表</a></li>
                 </ul>
               </li>
               <li id="collapseAdmin" class="accordion-collapse collapse  hover-menu"
                 aria-labelledby="headingAdminFunction" data-bs-parent="#ebookContent">
                 <a class="accordion-body text-indent-sm text-primary" href="./trader_setting.html">
-                  <strong>3. 交易員帳號設定</strong>
+                  <strong>C. 交易員帳號設定</strong>
                 </a>
               </li>
             </ul>
-            <ul class="accordion-item list-group-item p-0 rounded-0>
+            <ul class="accordion-item list-group-item p-0">
               <h2 class=" accordion-header" id="headingBasicFunction">
               <button class="accordion-button bg-primary text-dark" type="button" data-bs-toggle="collapse"
                 data-bs-target="#collapseBasic" aria-expanded="true" aria-controls="collapseBasic">
                 <strong>基本功能</strong>
               </button>
               </h2>
-              <li id="collapseBasic" class="accordion-collapse collapse show hover-menu"
+              <li id="collapseBasic" class="accordion-collapse collapse hover-menu"
                 aria-labelledby="headingBasicFunction" data-bs-parent="#ebookContent">
-                <a class="accordion-body text-indent-sm text-primary click-style" href="./index.html">
-                  <strong>1. 登入</strong>
+                <a class="accordion-body text-indent-sm text-primary" href="./login.html">
+                  <strong>A. 登入</strong>
                 </a>
               </li>
-              <li id="collapseBasic" class="accordion-collapse collapse show  hover-menu"
+              <li id="collapseBasic" class="accordion-collapse collapse hover-menu"
                 aria-labelledby="headingBasicFunction" data-bs-parent="#ebookContent">
                 <a class="accordion-body text-indent-sm text-primary" href="./logout.html">
-                  <strong>2. 登出</strong>
+                  <strong>B. 登出</strong>
                 </a>
               </li>
-              <li id="collapseBasic" class="accordion-collapse collapse show  hover-menu"
+              <li id="collapseBasic" class="accordion-collapse collapse hover-menu"
                 aria-labelledby="headingBasicFunction" data-bs-parent="#ebookContent">
                 <a class="accordion-body text-indent-sm text-primary" href="./psd.html">
-                  <strong>3. 變更密碼</strong>
+                  <strong>C. 變更密碼</strong>
                 </a>
               </li>
-              <li id="collapseBasic" class="accordion-collapse collapse show  hover-menu"
+              <li id="collapseBasic" class="accordion-collapse collapse hover-menu"
                 aria-labelledby="headingBasicFunction" data-bs-parent="#ebookContent">
                 <a class="accordion-body text-indent-sm text-primary" href="./user_setting.html">
-                  <strong>4. 個人化設定</strong>
+                  <strong>D. 個人化設定</strong>
                 </a>
               </li>
             </ul>
@@ -172,27 +170,58 @@
       </nav>
       <main class="col-12 col-md-9">
         <header class="mb-4">
-          <h2 class="fw-bold">基本功能</h2>
-          <h4 class="text-secondary fw-bold">登入</h4>
+          <h2 class="fw-bold">交易功能</h2>
+          <h4 class="text-secondary fw-bold">母單委託—拆單</h4>
         </header>
-        <ul>
-          <li>
-            <p>輸入帳號及密碼，點選登入
-              ※由管理者建立帳號後，交易員首次登入時，會強制要求改密碼
-            </p>
-            <p class="fw-bold">
-              <一般登入>
-            </p>
-            <img src="./img/1-1-1.jpg" alt="normal login">
+        <ol class="nav nav-tabs" id="split_orderTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="single-tab" data-bs-toggle="tab" data-bs-target="#single" type="button"
+              role="tab" aria-controls="single" aria-selected="true">單筆</button>
           </li>
-          <li>
-            <p class="fw-bold mt-3">
-              <首次登入後更改密碼>
-            </p>
-            <img src="./img/1-1-2.jpg" alt="first time login">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="by_qty-tab" data-bs-toggle="tab" data-bs-target="#by_qty" type="button"
+              role="tab" aria-controls="by_qty" aria-selected="false">分時(拆量)</button>
           </li>
-        </ul>
-
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="by_time-tab" data-bs-toggle="tab" data-bs-target="#by_time" type="button"
+              role="tab" aria-controls="by_time" aria-selected="false">分時</button>
+          </li>
+        </ol>
+        <div class="tab-content mt-5" id="split_orderTabContent">
+          <ol class="tab-pane fade show active" id="single" role="tabpanel" aria-labelledby="single">
+            <li class="my-2">選擇欲拆單的拆單按鈕</li>
+            <li class="my-2">選擇單筆頁籤</li>
+            <li class="my-2">輸入策略資訊(點選查價可出現即時行情，點選金額將自動帶入至價格欄位)</li>
+            <li class="my-2">確認商品</li>
+            <li class="my-2">更新於母單列表，點選母單即顯示委託歷程</li>
+            <li class="my-2">點選該筆的子單按鈕，可看到子單詳情</li>
+            <li class="my-2">點選該筆策略，可看到子單狀態</li>
+            <img src="./img/2-2-10.jpg" alt="single split order information step1 to step4">
+            <img src="./img/2-2-11.jpg" alt="single split order information step5 to step7">
+          </ol>
+          <ol class="tab-pane fade" id="by_qty" role="tabpanel" aria-labelledby="by_qty">
+            <li class="my-2">選擇欲拆單的拆單按鈕</li>
+            <li class="my-2">選擇分時(拆量)頁籤</li>
+            <li class="my-2">輸入策略資訊(分時策略可進行特別設定)</li>
+            <li class="my-2">確認商品</li>
+            <li class="my-2">點選該筆的子單按鈕，可看到子單詳情</li>
+            <li class="my-2">點選欲查看的策略交易，可看到子單成交狀況</li>
+            <li class="my-2">策略委託時間未到，子單會列在排程頁籤，如已送出委託會放進子單頁籤</li>
+            <img src="./img/2-2-12.jpg" alt="by qty split order information step1 to step4">
+            <img src="./img/2-2-13.jpg" alt="by qty split order information step5 to step7">
+          </ol>
+          <ol class="tab-pane fade" id="by_time" role="tabpanel" aria-labelledby="by_time">
+            <li class="my-2">選擇欲拆單的拆單按鈕</li>
+            <li class="my-2">選擇分時頁籤</li>
+            <li class="my-2">輸入策略資訊(分時策略可進行特別設定)</li>
+            <li class="my-2">確認商品</li>
+            <li class="my-2">更新於母單列表</li>
+            <li class="my-2">點選該筆的子單按鈕，可看到子單詳情</li>
+            <li class="my-2">點選欲查看的策略交易，可看到子單成交狀況</li>
+            <li class="my-2">策略委託時間未到，子單會列在排程頁籤，如已送出委託會放進子單頁籤</li>
+            <img src="./img/2-2-14.jpg" alt="by time split order information step1 to step8">
+          </ol>
+        </div>
       </main>
     </div>
   </div>

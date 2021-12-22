@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FOMS操作手冊|母單委託|代理</title>
+  <title>FOMS操作手冊|登入</title>
   <link rel="stylesheet" href="./style/all.min.css" />
   <script src="./js/bootstrap.bundle.min.js"></script>
 </head>
@@ -17,14 +17,14 @@
         <div class="card border-0">
           <a class="card-header fw-bold" href="./index.html">FOMS<br>期貨服務管理平台</a>
           <div class="accordion list-group" id="ebookContent">
-            <ul class="accordion-item list-group-item p-0 rounded-0">
+            <ul class="accordion-item list-group-item p-0">
               <h2 class="accordion-header" id="headingTradeFunction">
                 <button class="accordion-button bg-primary text-dark" type="button" data-bs-toggle="collapse"
                   data-bs-target="#collapseTrade" aria-expanded="true" aria-controls="collapseTrade">
                   <strong>交易功能</strong>
                 </button>
               </h2>
-              <li id="collapseTrade" class="accordion-collapse collapse show" aria-labelledby="headingTradeFunction"
+              <li id="collapseTrade" class="accordion-collapse collapse" aria-labelledby="headingTradeFunction"
                 data-bs-parent="#ebookContent">
                 <a class="accordion-body text-primary text-indent-sm" href="#">
                   <strong>A. 母單委託</strong>
@@ -38,7 +38,7 @@
                   </li>
                   <li class="hover-menu"><a class="accordion-body text-indent-lg" href="./delete_main_order.html">4. 刪除母單</a>
                   </li>
-                  <li class="hover-menu"><a class="accordion-body text-indent-lg click-style" href="./proxy.html">5. 代理委託</a>
+                  <li class="hover-menu"><a class="accordion-body text-indent-lg" href="./proxy.html">5. 代理委託</a>
                   </li>
                   <li class="hover-menu"><a class="accordion-body text-indent-lg" href="./group_func.html">6. 群組分類</a>
                   </li>
@@ -50,7 +50,7 @@
                   </li>
                 </ul>
               </li>
-              <li id="collapseTrade" class="accordion-collapse collapse show" aria-labelledby="headingTradeFunction"
+              <li id="collapseTrade" class="accordion-collapse collapse dropdown" aria-labelledby="headingTradeFunction"
                 data-bs-parent="#ebookContent">
                 <a class="accordion-body text-primary text-indent-sm" href="#">
                   <strong>B. 子單委託</strong>
@@ -67,7 +67,7 @@
                   </li>
                 </ul>
               </li>
-              <li id="collapseTrade" class="accordion-collapse collapse show" aria-labelledby="headingTradeFunction"
+              <li id="collapseTrade" class="accordion-collapse collapse dropdown" aria-labelledby="headingTradeFunction"
                 data-bs-parent="#ebookContent">
                 <a class="accordion-body text-primary text-indent-sm" href="#">
                   <strong>C. 指示單</strong>
@@ -79,7 +79,7 @@
                   </li>
                 </ul>
               </li>
-              <li id="collapseTrade" class="accordion-collapse collapse show" aria-labelledby="headingTradeFunction"
+              <li id="collapseTrade" class="accordion-collapse collapse dropdown" aria-labelledby="headingTradeFunction"
                 data-bs-parent="#ebookContent">
                 <a class="accordion-body text-primary text-indent-sm" href="#">
                   <strong>D. 期權商品查詢</strong>
@@ -133,32 +133,32 @@
                 </a>
               </li>
             </ul>
-            <ul class="accordion-item list-group-item p-0">
+            <ul class="accordion-item list-group-item p-0 rounded-0>
               <h2 class=" accordion-header" id="headingBasicFunction">
               <button class="accordion-button bg-primary text-dark" type="button" data-bs-toggle="collapse"
                 data-bs-target="#collapseBasic" aria-expanded="true" aria-controls="collapseBasic">
                 <strong>基本功能</strong>
               </button>
               </h2>
-              <li id="collapseBasic" class="accordion-collapse collapse hover-menu"
+              <li id="collapseBasic" class="accordion-collapse collapse show hover-menu"
                 aria-labelledby="headingBasicFunction" data-bs-parent="#ebookContent">
-                <a class="accordion-body text-indent-sm text-primary" href="./login.html">
+                <a class="accordion-body text-indent-sm text-primary click-style" href="./login.html">
                   <strong>A. 登入</strong>
                 </a>
               </li>
-              <li id="collapseBasic" class="accordion-collapse collapse hover-menu"
+              <li id="collapseBasic" class="accordion-collapse collapse show  hover-menu"
                 aria-labelledby="headingBasicFunction" data-bs-parent="#ebookContent">
                 <a class="accordion-body text-indent-sm text-primary" href="./logout.html">
                   <strong>B. 登出</strong>
                 </a>
               </li>
-              <li id="collapseBasic" class="accordion-collapse collapse hover-menu"
+              <li id="collapseBasic" class="accordion-collapse collapse show  hover-menu"
                 aria-labelledby="headingBasicFunction" data-bs-parent="#ebookContent">
                 <a class="accordion-body text-indent-sm text-primary" href="./psd.html">
                   <strong>C. 變更密碼</strong>
                 </a>
               </li>
-              <li id="collapseBasic" class="accordion-collapse collapse hover-menu"
+              <li id="collapseBasic" class="accordion-collapse collapse show  hover-menu"
                 aria-labelledby="headingBasicFunction" data-bs-parent="#ebookContent">
                 <a class="accordion-body text-indent-sm text-primary" href="./user_setting.html">
                   <strong>D. 個人化設定</strong>
@@ -170,18 +170,27 @@
       </nav>
       <main class="col-12 col-md-9">
         <header class="mb-4">
-          <h2 class="fw-bold">交易功能</h2>
-          <h4 class="text-secondary fw-bold">母單委託—代理</h4>
+          <h2 class="fw-bold">基本功能</h2>
+          <h4 class="text-secondary fw-bold">登入</h4>
         </header>
-        <ol>
-          <li class="my-2">選擇欲代理的user名稱</li>
-          <li class="my-2">選擇要代理的母單</li>
-          <li class="my-2">點選代理</li>
-          <li class="my-2">選擇代理後要放進的目標群組</li>
-          <li class="my-2">確認</li>
-          <li class="my-2">新增於自己的母單列表</li>
-          <img src="./img/2-2-8.jpg" alt="proxy information step1 to step6">
-        </ol>
+        <ul>
+          <li>
+            <p>輸入帳號及密碼，點選登入
+              ※由管理者建立帳號後，交易員首次登入時，會強制要求改密碼
+            </p>
+            <p class="fw-bold">
+              <一般登入>
+            </p>
+            <img src="./img/1-1-1.jpg" alt="normal login">
+          </li>
+          <li>
+            <p class="fw-bold mt-3">
+              <首次登入後更改密碼>
+            </p>
+            <img src="./img/1-1-2.jpg" alt="first time login">
+          </li>
+        </ul>
+
       </main>
     </div>
   </div>
